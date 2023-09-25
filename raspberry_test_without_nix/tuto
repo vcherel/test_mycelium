@@ -1,0 +1,17 @@
+HOW TO USE IT :
+
+./launch.sh
+
+
+
+HOW I DID IT :
+
+Suivi tuto sur : https://farabimahmud.github.io/emulate-raspberry-pi3-in-qemu/  (seulement des fichiers à télécharger)
+
+Télécharger OS lite sur : https://www.raspberrypi.com/software/operating-systems/
+
+Décompresser le fichier image du disque
+
+Modifier le nom du disque dans le script launch.sh
+
+Changer la taille du disque avec : qemu-img resize <nom_du_fichier>.img 2G
