@@ -1,12 +1,16 @@
 HOW TO USE IT :
 
-./launch.sh
+cd Documents/4_INFO/Projet_4INFO/test_mycelium/raspberry_test_1/
+
+./launch_1.sh
+
+./launch_2.sh (dans un autre terminal)
 
 
 
 HOW I DID IT :
 
-Suivi tuto sur : https://farabimahmud.github.io/emulate-raspberry-pi3-in-qemu/  (seulement des fichiers à télécharger)
+Suivre tuto sur : https://farabimahmud.github.io/emulate-raspberry-pi3-in-qemu/  (seulement des fichiers à télécharger)
 
 Télécharger OS lite sur : https://www.raspberrypi.com/software/operating-systems/
 

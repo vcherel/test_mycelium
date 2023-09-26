@@ -9,7 +9,7 @@ qemu-system-aarch64 \
     -sd disk_lite.img \
     -kernel kernel8.img \
     -m 1G -smp 4 \
-    -serial stdio \
+    -nographic \
     -usb -device usb-mouse -device usb-kbd \
-	-device usb-net,netdev=net0 \
-	-netdev user,id=net0,hostfwd=tcp::5555-:22 \
+    -device usb-net,netdev=net0 \
+    -netdev user,id=net0,hostfwd=tcp::5555-:22 \

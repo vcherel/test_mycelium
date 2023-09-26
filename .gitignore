@@ -1,6 +1,3 @@
-
-nix_test_1_raspberry/disk_lite.img
-nix_test_1_raspberry/kernel8.img
-raspberry_test_without_nix/disk_lite.img
-raspberry_test_without_nix/Disque avec desktop/disk.img
-raspberry_test_without_nix/kernel8.img
+disk_1.img
+disk_2.img
+kernel8.img
