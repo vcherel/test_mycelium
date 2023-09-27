@@ -1,10 +1,8 @@
 HOW TO USE IT :
 
-cd Documents/4_INFO/Projet_4INFO/test_mycelium/raspberry_test_1/
+cd Documents/4_INFO/Projet_4INFO/test_mycelium/
 
-./launch_1.sh
-
-./launch_2.sh (dans un autre terminal)
+./launch.sh
 
 
 
