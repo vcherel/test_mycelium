@@ -6,6 +6,9 @@ cd Documents/4_INFO/Projet_4INFO/test_mycelium/
 
 
 
+qemu-system-x86_64 -enable-kvm -smp 2 -m 2G -cdrom ubuntu-16.04-desktop-amd64.iso -nic user,hostfwd=tcp::8888-:22
+
+
 HOW I DID IT :
 
 Suivre tuto sur : https://farabimahmud.github.io/emulate-raspberry-pi3-in-qemu/  (seulement des fichiers à télécharger)

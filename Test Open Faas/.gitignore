@@ -1,6 +1,3 @@
-*.img
-
 template
 build
 .secrets
-*.iso
