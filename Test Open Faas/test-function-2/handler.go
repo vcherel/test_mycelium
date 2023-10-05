@@ -7,7 +7,7 @@ import (
 )
 
 func Handle(w http.ResponseWriter, r *http.Request) {
-	var req []byte
+	var input []byte
 
 	// Check if the request body is not nil
 	if r.Body != nil {
@@ -15,17 +15,26 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 		defer r.Body.Close()
 
 		// Read the entire request body into the 'body' variable
-		body, _ := io.ReadAll(r.Body)
+		body, err := io.ReadAll(r.Body)
+		
+		// Check if there was an error reading the request body
+		if err != nil {
+			// Set the HTTP response status code to 500 (Internal Server Error)
+			w.WriteHeader(http.StatusInternalServerError)
+
+			// Write the error message as the response body
+			w.Write([]byte(fmt.Sprintf("Error reading request body: %s", err.Error())))
+
+			// Exit the function
+			return
+		}
 
 		// Assign the 'body' variable (as bytes) to the 'input' variable
-		req = body
+		input = body
 	}
 
 	// Modify the input
-	modifiedInput := "Modified: " + string(req)
-
-	// Print the modified input to the console
-	fmt.Println(modifiedInput)
+	modifiedInput := "Modified: " + string(input)
 
 	// Set the HTTP response status code to 200 (OK)
 	w.WriteHeader(http.StatusOK)
