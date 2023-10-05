@@ -38,7 +38,7 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	input := string(req)
 
 	// Make an HTTP request to invoke the second function
-	resp, err := http.Post("http://127.0.0.1:8080/function/test-function-2", "application/json", strings.NewReader(input))
+	resp, err := http.Post("http://127.0.0.1:8080/function/test-function-2", "text/plain", strings.NewReader(input))
 
 	// Check if there was an error making the HTTP request
 	if err != nil {
