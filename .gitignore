@@ -1,6 +1,7 @@
 *.img
+*.iso
 
 template
 build
+
 .secrets
-*.iso
