@@ -33,7 +33,7 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	input := string(req)
 
 	// Make an HTTP request to invoke the second function
-	resp, err := http.Post("http://test-function-2:8080", "text/plain", strings.NewReader(input))
+	resp, err := http.Post("http://test-function-3:8080", "text/plain", strings.NewReader(input))
 
 	// Check if there was an error making the HTTP request
 	if err != nil {
